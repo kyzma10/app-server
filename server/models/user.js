@@ -20,6 +20,10 @@ const userSchema = Schema({
     trim: true
   },
 
+  confirmCode: {
+    type: String
+  },
+
   token: String,
 
   isVerify: {

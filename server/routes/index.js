@@ -8,9 +8,7 @@ router.get('/', (req, res) => {
 
 router.post('/api/register', AuthController.register);
 
-router.post('/api/confirm', (req, res) => {
-  res.send(req.body)
-});
+router.post('/api/confirm_email', AuthController.verifyEmail);
 
 router.post('/api/login', AuthController.login);
 
